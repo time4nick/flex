@@ -567,6 +567,7 @@ Gallery
 .gallery-img-container {
   position: relative;
   background: var(--clr-primary-5);
+  cursor: pointer;
 }
 .gallery-icon {
   position: absolute;
@@ -575,9 +576,10 @@ Gallery
   font-size: 1.5rem;
   transform: translate(-50%, -50%);
   color: var(--clr-white);
-  opacity: 0;
-  cursor: pointer;
   transition: var(--transition);
+}
+.fa-search {
+  opacity: 0.05;
 }
 .gallery-img {
   height: 17rem;
@@ -586,10 +588,9 @@ Gallery
 }
 .gallery-img-container,
 .gallery-img {
-  opacity: 0.85;
+  opacity: 0.75;
 }
-.gallery-img-container:hover,
-.gallery-icon {
+.gallery-img-container:hover .fa-search {
   opacity: 1;
 }
 @media screen and (min-width: 768px) {
